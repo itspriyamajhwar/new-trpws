@@ -1,110 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Shiksha</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background-color: #f9f9f9;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      padding: 20px;
-    }
-
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 1200px;
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .text-content {
-      flex: 1;
-      padding: 20px;
-    }
-
-    .text-content h2 {
-      color: #2a4db8;
-      font-size: 2rem;
-      margin-bottom: 15px;
-    }
-
-    .text-content p {
-      color: #333;
-      font-size: 1rem;
-      line-height: 1.8;
-    }
-
-    .image-content {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-
-    .image-content img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-      }
-
-      .text-content, .image-content {
-        flex: none;
-        width: 100%;
-      }
-
-      .text-content h2 {
-        font-size: 1.5rem;
-      }
-
-      .text-content p {
-        font-size: 0.9rem;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <!-- Text Section -->
-    <div class="text-content">
-      <h2>PROJECT SHIKSHA</h2>
-      <p>
-        Events always play a crucial role in a foundation because they showcase the 
-        marketing and network of the foundation. Events show the value of your foundation, 
-        making people more engaged, which increases endorsements and awareness. Events create 
-        awareness about children, encouraging people to connect more. By organizing events, 
-        the foundation raises awareness and inspires people to take potential steps for children. 
-        Events aim to create a positive change in the environment, helping the foundation expand 
-        its network, marketing, and engagement efforts.
-      </p>
-    </div>
-
-    <!-- Image Section -->
-    <div class="image-content">
-      <img src="https://via.placeholder.com/600x400" alt="Project Shiksha">
-    </div>
+<div class="container">
+  <div class="row ">
+    <div class="col"></div>
+    <div class="col internship" data-aos="zoom-in-up" data-aos-easing="ease-in-sine" data-aos-delay="200">
+      <h2>Internship Form<hr class="internship-green-hr"></h2>
+      <form action="" name='internshipform' id="internshipform" method="post" >
+          <div class="form-group">
+              <label for="name">Name</label>
+              <input class="form-control" type="text" name='name' placeholder="Your Name..." required> 
+            </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" name="email" placeholder="Your Email..." required>
+          </div>
+          <div class="form-group">
+              <label for="Phone">Phone</label>
+              <input type="tel" id="phone" name="phone"  name='phone' class="form-control" placeholder="Your Phone Number..." required>
+            </div>
+            <div class="form-group">
+              <label for="internship-option">Choose Internship</label>
+              <select class="form-control" id="internship-option" required>
+                <option value="">--Select Option--</option>
+                <option value="Teaching">Teaching</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Graphic Designing">Graphic Designing</option>
+                <option value="Content Writing">Content Writing</option>
+                <option value="Social Media Marketing">Social Media Marketing</option>
+                <option value="Human Resource">Human Resource</option>
+                <option value="Photography">Photography</option>
+                <option value="Public Relation">Public Relation</option>
+                <option value="Creative Department">Creative Department</option>
+                <option value="Campus Ambassador">Campus Ambassador</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="resume-btn" ><i class="fa fa-upload " aria-hidden="true" style="color: #009970;"></i> Upload Your Resume</label>
+              <input type="file" id="resume-btn" class="form-control" style="overflow: hidden;" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" rows="3"  name='message' placeholder="Write your message here..." required></textarea>
+            </div>
+          <button type="submit" class="btn btn-outline-success  mt-2 ">Submit</button>
+        </form>
+      </div>
+      <div class="col"></div>
   </div>
-</body>
-</html>
+</div>
